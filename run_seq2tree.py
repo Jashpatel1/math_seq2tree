@@ -113,10 +113,10 @@ for fold in range(5):
             print("test_answer_acc", float(equation_ac) / eval_total, float(value_ac) / eval_total)
             print("testing time", time_since(time.time() - start))
             print("------------------------------------------------------")
-            torch.save(encoder.state_dict(), "models/encoder")
-            torch.save(predict.state_dict(), "models/predict")
-            torch.save(generate.state_dict(), "models/generate")
-            torch.save(merge.state_dict(), "models/merge")
+            torch.save(encoder.state_dict(), "math_seq2tree/models/encoder")
+            torch.save(predict.state_dict(), "math_seq2tree/models/predict")
+            torch.save(generate.state_dict(), "math_seq2tree/models/generate")
+            torch.save(merge.state_dict(), "math_seq2tree/models/merge")
             if epoch == n_epochs - 1:
                 best_acc_fold.append((equation_ac, value_ac, eval_total))
 
