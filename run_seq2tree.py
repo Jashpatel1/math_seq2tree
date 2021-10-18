@@ -14,7 +14,7 @@ weight_decay = 1e-5
 beam_size = 5
 n_layers = 2
 
-data = load_raw_data("math_seq2tree/data/Math_23K.json")
+data = load_raw_data("../input/btp07dataset/Math_K.json")
 
 pairs, generate_nums, copy_nums = transfer_num(data)
 
